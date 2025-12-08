@@ -1,0 +1,360 @@
+{
+  "1": {
+    "day_number": 1,
+    "title": "Willkommen!",
+    "intro_text": "Genieß einen Text über den Anfang der Adventzeit in Deutschland✨",
+    "image_path": "images/day1.PNG",
+    "sections": {
+      "main": {
+        "title": "📜 Der erste Dezember in Deutschland",
+        "text": "Am ersten Dezember beginnt in Deutschland die Adventszeit. Die Adventszeit dauert vier Wochen bis Weihnachten. Viele Menschen haben einen Adventskalender. Jeden Tag öffnen sie ein kleines Türchen. Kinder freuen sich sehr, weil im Kalender oft Schokolade, kleine Spielsachen oder andere Geschenke sind.\n\nIn vielen Häusern und Wohnungen steht auch ein Adventskranz. Ein Adventskranz hat vier Kerzen. Am ersten Adventssonntag zündet man die erste Kerze an. Jeden Sonntag kommt eine neue Kerze dazu. Die Kerzen machen das Haus gemütlich und warm.\n\nViele Familien backen in dieser Zeit Plätzchen. Beliebte Sorten sind Vanillekipferl, Lebkuchen und Zimtsterne. Dazu trinken die Menschen oft Tee, Kakao oder Glühwein (für Erwachsene). Auf Weihnachtsmärkten kann man auch Kerzen, Dekoration und kleine Geschenke kaufen.\n\nDie Adventszeit ist eine schöne Tradition in Deutschland. Kinder und Erwachsene freuen sich auf Weihnachten, essen Plätzchen, trinken Tee und genießen die gemütliche Zeit mit der Familie."
+      },
+      "vocab": {
+        "title": "💡 Vokabeln",
+        "text": "beginnen - начинаться\ndie Adventszeit - время Адвента (предрождественский период)\ndauern - длиться\nder Adventskalender - адвент-календарь\ndas Türchen - дверца (в календаре)\ndie Spielsache - игрушка\ndas Geschenk - подарок\nder Adventskranz - рождественский венок\ndie Kerze - свеча\nanzünden - зажигать\ngemütlich - уютный\nbacken - печь\ndie Plätzchen - рождественское печенье\ndie Sorte - вид, сорт\nder Glühwein - глинтвейн\nder Weihnachtsmarkt - рождественский рынок\nsich freuen auf (Akk.) - радоваться тому, что произойдет\ngenießen - наслаждаться\ndie Familie - семья"
+      },
+      "reading": {
+        "title": "📘 Leseverstehen",
+        "intro": "Beantworte die Fragen zum Text. Tippe auf die richtige Antwort!",
+        "questions": [
+          {
+            "q": "Wann beginnt die Adventszeit in Deutschland?",
+            "options": ["Am ersten November", "Am ersten Dezember", "Am 24. Dezember"],
+            "correct": 1,
+            "explanation": "Im Text steht: „Am ersten Dezember beginnt in Deutschland die Adventszeit.“"
+          },
+          {
+            "q": "Wie lange dauert die Adventszeit?",
+            "options": ["Zwei Wochen", "Drei Wochen", "Vier Wochen"],
+            "correct": 2,
+            "explanation": "„Die Adventszeit dauert vier Wochen bis Weihnachten.“"
+          },
+          {
+            "q": "Was finden Kinder oft im Adventskalender?",
+            "options": ["Bücher und Zeitschriften", "Schokolade und kleine Geschenke", "Kleidung"],
+            "correct": 1,
+            "explanation": "„Kinder freuen sich sehr, weil im Kalender oft Schokolade, kleine Spielsachen oder andere Geschenke sind.“"
+          },
+          {
+            "q": "Wie viele Kerzen hat ein Adventskranz?",
+            "options": ["Drei", "Vier", "Fünf"],
+            "correct": 1,
+            "explanation": "„Ein Adventskranz hat vier Kerzen.“"
+          },
+          {
+            "q": "Was machen viele Familien in der Adventszeit?",
+            "options": ["Plätzchen backen und Tee trinken", "Schwimmen gehen", "Wandern in den Bergen"],
+            "correct": 0,
+            "explanation": "„Viele Familien backen in dieser Zeit Plätzchen. Dazu trinken die Menschen oft Tee, Kakao oder Glühwein.“"
+          },
+          {
+            "q": "Was kann man auf Weihnachtsmärkten kaufen?",
+            "options": ["Kleidung und Schuhe", "Kerzen, Dekoration und kleine Geschenke", "Autos und Fahrräder"],
+            "correct": 1,
+            "explanation": "„Auf Weihnachtsmärkten kann man auch Kerzen, Dekoration und kleine Geschenke kaufen.“"
+          }
+        ]
+      }
+    }
+  },
+
+  "2": {
+  "day_number": 2,
+  "title": "Heute hast du die Möglichkeit, deine Wortschatzkenntnisse vom gestrigen Text praktisch zu üben. Übersetze die folgenden Sätze vom Russischen ins Deutsche. Versuche, die richtigen Wörter zu verwenden und die Sätze so zu gestalten, wie man sie in der alltäglichen Kommunikation sagen würde. Dieses Übungsformat hilft dir, sowohl neue Wörter zu lernen als auch die Verwendung in Gesprächen zu trainieren. Viel Spaß beim Üben!",
+  "sections": {
+    "main": {
+      "title": "✍️ Heute hast du die Möglichkeit...",
+      "text": "Heute hast du die Möglichkeit, deine Wortschatzkenntnisse vom gestrigen Text praktisch zu üben.\nÜbersetze die folgenden Sätze vom Russischen ins Deutsche.\nVersuche, die richtigen Wörter zu verwenden und die Sätze so zu gestalten, wie man sie in der alltäglichen Kommunikation sagen würde.\nDieses Übungsformat hilft dir, sowohl neue Wörter zu lernen als auch die Verwendung in Gesprächen zu trainieren.\nViel Spaß beim Üben!"
+    },
+    "vocab": {
+      "title": "Übersetzungen",
+      "text": "1. Ты уже открывал сегодня новую дверцу в своём адвент-календаре?\n2. Какое печенье ты сегодня будешь есть с чаем?\n3. Мы идём на рождественский рынок. Хочешь пойти с нами?\n4. Сегодня мы зажжём первую свечу на нашем венке.\n5. Ты хочешь попробовать горячий шоколад с корицей?\n6. Какие подарки ты хочешь получить на Рождество?\n7. Дети очень рады, когда находят маленький подарок в календаре.\n8. Ты уже испёк(ла) рождественское печенье в этом году?\n9. Давай посмотрим, кто первым найдёт сюрприз в адвент-календаре.\n10. Вечером мы будем пить чай и смотреть рождественские фильмы."
+    },
+    "reading": {
+      "title": "💡 Empfohlene Lösungen",
+      "text": "1. Hast du heute schon das neue Türchen in deinem Adventskalender geöffnet?\n2. Welches Plätzchen wirst du heute mit Tee essen?\n3. Wir gehen auf den Weihnachtsmarkt. Willst du mitkommen?\n4. Heute zünden wir die erste Kerze an unserem Adventskranz an.\n5. Willst du heißen Kakao mit Zimt probieren?\n6. Welche Geschenke möchtest du zu Weihnachten bekommen?\n7. Die Kinder freuen sich sehr, wenn sie ein kleines Geschenk im Kalender finden.\n8. Hast du dieses Jahr schon Weihnachtsplätzchen gebacken?\n9. Lass uns sehen, wer das Überraschungsgeschenk im Adventskalender zuerst findet.\n10. Am Abend trinken wir Tee und schauen Weihnachtsfilme."
+    }
+  }
+},
+"3": {
+  "day_number": 3,
+  "title": "TAG 3 Sich freuen auf / über",
+  "video_path": "videos/tag3.mp4",
+  "sections": {
+    "main": {
+      "title": "SICH FREUEN AUF/ÜBER",
+      "text": "💡\nЗапомни просто:\nauf = будущее\nüber = прошлое\n\nСегодня разберём два очень похожих выражения по-немецки:\n„sich freuen auf“ и „sich freuen über“.\n\nОба означают «радоваться», но разница — во времени!\n\n👉 „sich freuen auf“ — это радоваться тому, что будет.\nНапример:\nIch freue mich auf das Wochenende. — Я радуюсь выходным, которые ещё впереди.\n\n👉 „sich freuen über“ — это радоваться тому, что уже произошло.\nНапример:\nIch freue mich über das Geschenk. — Я радуюсь подарку, который уже получил."
+    },
+    "exercise": {
+      "title": "🧩 Übung: Auf oder über?",
+      "intro": "Setze *auf* oder *über* ein!\nAchte darauf:\n• auf → Zukunft\n• über → Vergangenheit oder Gegenwart\n",
+      "items": [
+        "Ich freue mich ___ die Weihnachtsferien.",
+        "Die Kinder freuen sich ___ die Geschenke unter dem Weihnachtsbaum.",
+        "Wir freuen uns ___ den Schnee, der gestern gefallen ist.",
+        "Oma freut sich ___ den Besuch ihrer Familie an Weihnachten.",
+        "Viele Leute freuen sich ___ die ruhige Adventszeit.",
+        "Ich freue mich ___ das schöne Winterwetter heute.",
+        "Mein Bruder freut sich ___ den kommenden Skiurlaub in den Alpen.",
+        "Alle freuen sich ___ den leckeren Stollen, den es schon gibt.",
+        "Die Kinder freuen sich ___ den Nikolaustag nächste Woche.",
+        "Wir freuen uns ___ die schönen Erinnerungen vom letzten Winterurlaub."
+      ],
+      "solutions": [
+        "auf",
+        "über",
+        "über",
+        "auf",
+        "auf",
+        "über",
+        "auf",
+        "über",
+        "auf",
+        "über"
+      ]
+    }
+  }
+}, 
+"4": {
+  "day_number": 4,
+  "title": "Der Weihnachtsbaum",
+  "sections": {
+    "main": {
+      "title": "Der Weihnachtsbaum 🎄",
+      "text": "Heute geht es um das Herzstück der deutschen Weihnachten – den Weihnachtsbaum! 🎅✨\n\nFast in jedem Haus in Deutschland steht im Dezember ein geschmückter Baum. Er duftet nach Wald, leuchtet bunt und bringt eine festliche Stimmung ins Wohnzimmer.\n\nIn dieser Lektion lernst du:\n🌲 wie man den Weihnachtsbaum kauft und aufstellt,\n🎁 welche Verben man verwendet, um den Baum zu schmücken\n\nBist du bereit? Dann los – wir lernen die Weihnachtsbaum-Vokabeln! 🎄🇩🇪"
+    },
+
+    "vocab_parts": {
+      "title": "🪵 Teile des Baumes",
+      "text": "die Spitze - верхушка\nder Stamm - ствол\nder Zweig - ветка\ndie Nadeln - иголки\ndie Wurzeln - корни\nder Harz - смола"
+    },
+
+    "vocab_buy": {
+      "title": "🛍️ Beim Kauf",
+      "text": "🗣️Wo kann ich einen Weihnachtsbaum kaufen? - Где я могу купить ёлку?\n🗣️Haben Sie echte oder künstliche Bäume? - У вас живые или искусственные ёлки?\n🗣️Wie hoch ist der Baum? - Насколько высокая ёлка?\n🗣️Ich nehme diesen hier. - Я возьму вот эту.\n🗣️Können Sie ihn einpacken? - Можете её упаковать?\n🗣️Gibt es einen Ständer dazu? - Есть подставка к ней?\n🗣️Wie lange hält der Baum frisch? - Как долго ёлка остаётся свежей?"
+    },
+
+    "vocab_verbs": {
+      "title": "💡 Verben",
+      "text": "schmücken / dekorieren - украшать\naufhängen - вешать\nanbringen - прикреплять\neinschalten - включать\nausschalten - выключать\naufstellen - ставить\nfestmachen - закреплять\nglänzen - блестеть\nleuchten - светиться\nfunkeln - мерцать\nriechen nach (Dat.) - пахнуть чем-то"
+    }
+  }
+},
+"5": {
+  "day_number": 5,
+  "title": "Weihnachtsschmuck",
+  "sections": {
+    "main": {
+      "title": "🎄 Türchen 5",
+      "text": "Grüß dich 🤗\nMit dem 5. Türchen wirst du erfahren, welche Wörter man für Schmuck und Dekoration braucht ✨"
+    },
+
+    "vocab": {
+      "title": "📚 Weihnachtsschmuck",
+      "text": "der Christbaumschmuck / der Weihnachtsbaum – украшения для ёлки (общее слово)\ndie Weihnachtskugel – ёлочный шар\ndie Glaskugel – стеклянный шар\ndas Glöckchen – колокольчик\ndie Schleife – бантик\nder Stern – звезда (особенно сверху)\nder Engel – ангел\nder Weihnachtsmann – Дед Мороз\nder Schneemann – снеговик\ndie Figur / die Weihnachtsfigur – фигурка\ndie Lichterkette – электрическая гирлянда\ndie Kerze – свеча\ndas Lametta – мишура\ndie Girlande – декоративная гирлянда\nder Tannenzapfen – шишка\nder Eiszapfen – сосулька\ndie Schneeflocke – снежинка\nder Lebkuchenmann – пряничный человечек\ndie Bonbons / die Zuckerstange – конфеты / леденцы\ndas Vögelchen – птичка\ndas Rentier – олень\ndie Krippe – рождественский вертеп\ndie Baumspitze – верхушка ёлки\nder Schmuckhaken / der Aufhänger – крючок / подвес"
+    }
+  }
+}, 
+"6": {
+  "day_number": 6,
+  "title": "Nikolaustag in Deutschland",
+  "sections": {
+    "main": {
+      "title": "🎅 Nikolaustag",
+      "text": "Alles Gute zum Nikolaustag 💫\nKinder in Deutschland stellen ihre Stiefel 🥾 vor die Tür. Am Morgen finden sie kleine Überraschungen darin.\nLass uns zusammen lernen, welche Traditionen es an diesem Tag gibt 😉\n\n👇 Tippe auf *Text 🎅🏼*, um mehr zu erfahren."
+    },
+
+    "text": {
+      "title": "🎅🏼 Nikolaustag – Traditionen",
+      "text": "Der Nikolaustag in Deutschland\n\nIn Deutschland feiern die Menschen am 6. Dezember den Nikolaustag. Nikolaus war ein guter Mann. Er lebte vor vielen Jahren und half armen Menschen. Heute erinnern sich die Menschen an seine guten Taten.\n\nAm Abend des 5. Dezembers stellen die Kinder ihre Schuhe oder Stiefel vor die Tür. Viele Kinder putzen ihre Schuhe vorher, damit Nikolaus sie sieht. In der Nacht kommt der Nikolaus und füllt die Schuhe mit Süßigkeiten, Schokolade, kleinen Geschenken oder Nüssen.\n\nIn manchen Regionen kommt der Nikolaus nicht allein. Er hat einen Helfer. In Süddeutschland heißt er „Knecht Ruprecht“ oder „Krampus“. Dieser Helfer trägt oft schwarze Kleidung und einen langen Sack. Er prüft, ob die Kinder brav waren. Kinder, die brav waren, bekommen Geschenke. Kinder, die unartig waren, bekommen manchmal eine Rute oder einen kleinen Hinweis, dass sie sich bessern sollen.\n\nViele Familien singen Lieder oder sagen Gedichte auf. Die Kinder lernen Gedichte in der Schule oder zu Hause, um kleine Geschenke von Nikolaus zu bekommen.\n\nIn einigen Städten gibt es auch Nikolausmärkte. Dort kann man Süßigkeiten, kleine Geschenke und warme Getränke kaufen. Die Menschen treffen sich, sprechen miteinander und freuen sich über den Nikolaustag.\n\nDer Nikolaustag ist besonders für Kinder wichtig, aber auch Erwachsene freuen sich über kleine Überraschungen. Es ist ein schöner Brauch in Deutschland, der Freude, Freundlichkeit und Gemeinschaft bringt."
+    },
+
+    "vocab": {
+      "title": "📚 Wortschatz",
+      "text": "• der Nikolaustag – День Святого Николая\n• der Nikolaus – Святой Николай\n• feiern – праздновать\n• der Mensch, die Menschen – человек, люди\n• der gute Mann – хороший человек\n• helfen – помогать\n• arm – бедный\n• die Tat, die Taten – поступок, поступки\n• der Abend – вечер\n• der Schuh, die Schuhe – обувь\n• der Stiefel – сапог\n• die Tür – дверь\n• putzen – чистить\n• die Süßigkeiten – сладости\n• die Schokolade – шоколад\n• das Geschenk – подарок\n• die Nuss – орех\n• der Helfer – помощник\n• prüfen – проверять\n• brav – послушный\n• unartig – непослушный\n• die Rute – розга\n• der Hinweis – намёк\n• sich bessern – исправляться\n• singen – петь\n• das Gedicht – стихотворение\n• der Nikolausmarkt – рождественский рынок Николая\n• das Getränk – напиток\n• die Gemeinschaft – общение\n• der Brauch – обычай\n• die Überraschung – сюрприз"
+    },
+
+    "reading": {
+      "title": "📖 Leseverstehen – Nikolaustag",
+      "intro": "Jetzt überprüfe dich, wie gut du den Text verstanden hast. Viel Glück! 🍀📖",
+      "questions": [
+        {
+          "q": "Wer war Nikolaus?",
+          "options": [
+            "a) Ein böser Mann",
+            "b) Ein guter Mann, der armen Menschen half",
+            "c) Ein König"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Was stellen die Kinder am Abend des 5. Dezembers vor die Tür?",
+          "options": [
+            "a) Ihre Schuhe oder Stiefel",
+            "b) Ihre Bücher",
+            "c) Ihre Kleidung"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Wer hilft dem Nikolaus in manchen Regionen?",
+          "options": [
+            "a) Der Weihnachtsmann",
+            "b) Knecht Ruprecht oder Krampus",
+            "c) Der Osterhase"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Was bekommen die Kinder, die brav waren?",
+          "options": [
+            "a) Geschenke, Süßigkeiten oder Schokolade",
+            "b) Eine Rute",
+            "c) Nichts"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Was machen die Kinder, um Geschenke zu bekommen?",
+          "options": [
+            "a) Sie sagen Gedichte oder singen Lieder",
+            "b) Sie schlafen die ganze Nacht",
+            "c) Sie schreiben Briefe an den Nikolaus"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Was ist besonders am Nikolaustag?",
+          "options": [
+            "a) Nur Erwachsene bekommen Geschenke",
+            "b) Es ist ein schöner Brauch, der Freude und Gemeinschaft bringt",
+            "c) Man feiert nur in Süddeutschland"
+          ],
+          "correct": 1
+        }
+      ]
+    }
+  }
+},
+"7": {
+  "day_number": 7,
+  "title": "Übungstag – Nikolaus",
+  "sections": {
+    "main": {
+      "title": "🎄 Übungstag zu Nikolaus",
+      "text": "🎄 Hallo du!\nIch hoffe, du hattest gestern einen tollen Nikolaustag voller Überraschungen! 🎅🍫✨\nHeute wartet eine kleine Übung auf dich: Übersetze ein paar Sätze, um die Vokabeln von gestern noch besser zu lernen und zu festigen. 📝💪\n\nViel Spaß beim Üben und viel Glück! 🍀🎉\n\n👇 Tippe auf *Übung*, um zu starten."
+    },
+
+    "vocab": {
+      "title": "📝 Übung",
+      "text": "1. Ты уже поставил свои ботинки на порог?\n2. Сегодня ночью придёт Святой Николай.\n3. Не забудь почистить свои ботинки перед сном.\n4. Посмотри, какие сладости у тебя в ботинках!\n5. Давай вместе приготовим письмо для Николая.\n6. Я хочу получить шоколад и маленький подарок.\n7. Мама говорит, что Николай любит послушных детей.\n8. Мы будем рассказывать стихи и петь песни для Николая.\n9. После завтрака мы посмотрим, что Николай положил в ботинки.\n10. Этот праздник делает зиму такой тёплой и весёлой!"
+    },
+
+    "reading": {
+      "title": "💡 Empfohlene Übersetzungen",
+      "text": "1. Hast du schon deine Schuhe vor die Tür gestellt?\n2. Heute Nacht kommt der Heilige Nikolaus.\n3. Vergiss nicht, deine Schuhe vor dem Schlafengehen zu putzen.\n4. Schau mal, welche Süßigkeiten in deinen Schuhen sind!\n5. Lass uns zusammen einen Brief für Nikolaus schreiben.\n6. Ich möchte Schokolade und ein kleines Geschenk bekommen.\n7. Mama sagt, dass Nikolaus brave Kinder mag.\n8. Wir werden Gedichte aufsagen und Lieder für Nikolaus singen.\n9. Nach dem Frühstück schauen wir, was Nikolaus in die Schuhe gelegt hat.\n10. Dieses Fest macht den Winter so warm und fröhlich!"
+    }
+  }
+},
+"8": {
+  "day_number": 8,
+  "title": "Gratulieren – Dativ + zu",
+  "sections": {
+    "main": {
+      "title": "🎉 gratulieren + Dativ + zu",
+      "text": "Сегодня у нас видео-урок: *gratulieren Dat zu Dat* 🎥\n\nЭто очень важная конструкция в немецком!\n\n👉 gratulieren **wem?** (Dativ)\n👉 **wozu?** (zu + Dativ)\n\nПосле видео нажми на кнопку, чтобы пройти упражнение 👇"
+    },
+
+    "vocab": {
+      "title": "📝 Übung",
+      "intro": "Ergänze die Sätze, indem du die richtige Dativform wählst. Nur eine Antwort ist richtig.",
+      "questions": [
+        {
+          "q": "Ich gratuliere ___ ___ Geburtstag.",
+          "options": [
+            "a) der Freundin – zum",
+            "b) die Freundin – zur",
+            "c) dem Freundin – zu dem"
+          ],
+          "correct": 0,
+          "explanation": "Правильно: a) der Freundin – zum Geburtstag"
+        },
+        {
+          "q": "Wir gratulieren ___ ___ neuen Job.",
+          "options": [
+            "a) dem Vater – zum",
+            "b) den Vater – zu",
+            "c) der Vater – zum"
+          ],
+          "correct": 0,
+          "explanation": "Правильно: a) dem Vater – zum neuen Job"
+        },
+        {
+          "q": "Die Lehrerin gratuliert ___ ___ guten Note.",
+          "options": [
+            "a) dem Schüler – zu der",
+            "b) den Schüler – zu",
+            "c) der Schüler – zum"
+          ],
+          "correct": 0,
+          "explanation": "Правильно: a) dem Schüler – zu der guten Note"
+        },
+        {
+          "q": "Ich gratuliere ___ ___ bestandenen Prüfung.",
+          "options": [
+            "a) der Kollegin – zur",
+            "b) dem Kollegin – zu der",
+            "c) die Kollegin – zum"
+          ],
+          "correct": 0,
+          "explanation": "Правильно: a) der Kollegin – zur bestandenen Prüfung"
+        }
+      ]
+    }
+  }
+},
+"10": {
+  "day_number": 10,
+  "title": "Fest – Feiertag – Wochenende",
+  "sections": {
+    "main": {
+      "title": "🎥 das Fest – der Feiertag – das Wochenende",
+      "text": "Сегодня у нас видео-урок по трём важным словам:\n\n• **das Fest** 🎉 – праздник, торжество\n• **der Feiertag** 📅 – официальный выходной день\n• **das Wochenende** 🛌 – выходные (суббота и воскресенье)\n\nПосмотри видео, а затем выполни упражнение👇"
+    },
+
+    "vocab": {
+      "title": "🎄 Übung: Welches Wort passt?",
+      "text": "Setze *das Fest*, *der Feiertag* oder *das Wochenende* in der richtigen Form ein.\n\n1. Am 24. Dezember feiern wir __________ mit der ganzen Familie.\n2. In Deutschland ist der 25. Dezember ein __________.\n3. Ich freue mich immer auf __________, weil ich dann ausschlafen kann.\n4. Zu Weihnachten gibt es ein großes __________ mit Musik und gutem Essen.\n5. Morgen ist kein Arbeitstag, es ist ein __________.\n6. Am __________ backe ich Plätzchen und schaue Weihnachtsfilme.\n7. Dieses Jahr feiern wir das __________ bei meinen Großeltern.\n8. Viele Menschen reisen über __________ nach Hause.\n9. Neujahr ist ein offizieller __________ in Deutschland.\n10. Nach dem großen __________ brauche ich ein langes __________ zum Ausruhen! 😄"
+    },
+
+    "reading": {
+      "title": "💡 Lösungen",
+      "text": "1. Am 24. Dezember feiern wir **das Fest** mit der ganzen Familie.\n➡️ „das Fest“ = конкретный праздник.\n\n2. In Deutschland ist der 25. Dezember ein **Feiertag**.\n➡️ официальный выходной день.\n\n3. Ich freue mich immer auf **das Wochenende**, weil ich dann ausschlafen kann.\n\n4. Zu Weihnachten gibt es ein großes **Fest**.\n\n5. Morgen ist kein Arbeitstag, es ist ein **Feiertag**.\n\n6. Am **Wochenende** backe ich Plätzchen.\n\n7. Dieses Jahr feiern wir das **Fest** bei meinen Großeltern.\n\n8. Viele Menschen reisen über **das Wochenende** nach Hause.\n\n9. Neujahr ist ein offizieller **Feiertag**.\n\n10. Nach dem großen **Fest** brauche ich ein langes **Wochenende**!"
+    }
+  }
+},
+"11": {
+  "day_number": 11,
+  "title": "Winter & Weihnachts-Bucket-List",
+  "sections": {
+    "main": {
+      "title": "❄️ Winter Bucket List",
+      "text": "Heute wird es gemütlich und kreativ! ✨\nDu bekommst eine Winter- & Weihnachts-Bucket-List – viele kleine Ideen, die dir helfen, den Winter zu genießen und dabei Deutsch zu lernen. 🇩🇪❄️\n\nMach es dir mit einer Tasse Tee bequem ☕, lies die Liste und such dir aus, was du ausprobieren möchtest.\nJede Aktivität ist eine schöne Möglichkeit, neue Wörter zu lernen und in die deutsche Kultur einzutauchen. 💫\n\nViel Spaß und eine schöne Adventszeit! 🎁\n\n💡 *Tipp für Lernende:* Schreibe zu jedem Punkt später einen Satz im Perfekt.\nZum Beispiel:\n• Ich war auf dem Weihnachtsmarkt.\n• Ich habe ein deutsches Lied gelernt.\n\n👇 Tippe auf *Bucket-Liste*, um die Datei zu öffnen."
+    },
+
+    "vocab": {
+      "title": "📝 Winter Bucket-Liste",
+      "file_path": "fotos/foto.png",
+      "text": "Hier ist deine Winter- & Weihnachts-Bucket-Liste! ❄️🎄\nSpeichere sie, drucke sie aus oder hake digital ab, was du schon gemacht hast!"
+    }
+  }
+}
+
+
+
+
+
+
+
+
+}
