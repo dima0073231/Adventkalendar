@@ -81,6 +81,11 @@
   "title": "TAG 3 Sich freuen auf / über",
   "video_path": "videos/tag3_1.mp4",
   "video_path_2": "videos/tag3_2.mp4",
+  "sections": {
+    "main": {
+      "title": "",
+      "text": ""
+    },
     "exercise": {
       "title": "🧩 Übung: Auf oder über?",
       "intro": "Setze *auf* oder *über* ein!\nAchte darauf:\n• auf → Zukunft\n• über → Vergangenheit oder Gegenwart\n",
@@ -102,7 +107,6 @@
     }
   }
 },
-
 "4": {
   "day_number": 4,
   "title": "Der Weihnachtsbaum",
