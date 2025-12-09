@@ -220,20 +220,22 @@ bot.action(/open_(\d+)/, async (ctx) => {
 // SPECIAL DAY 3 — два видео подряд
 bot.action('open_3', async (ctx) => {
   const day = daysJson["3"];
-  const main = day.sections.main;
 
   await ctx.answerCbQuery();
 
-  // send both videos
+  // === SEND FIRST VIDEO ===
   if (day.video_path) {
-    await ctx.replyWithVideo({ source: path.join(__dirname, day.video_path) });
+    const v1 = path.join(__dirname, day.video_path);
+    await ctx.replyWithVideo({ source: v1 });
   }
+
+  // === SEND SECOND VIDEO ===
   if (day.video_path_2) {
-    await ctx.replyWithVideo({ source: path.join(__dirname, day.video_path_2) });
+    const v2 = path.join(__dirname, day.video_path_2);
+    await ctx.replyWithVideo({ source: v2 });
   }
 
-  // NO TEXT — skip main.title + main.text entirely
-
+  // === NOW ONLY BUTTONS (NO TEXT AT ALL!) ===
   return ctx.reply(
     '👇 Zur Übung:',
     Markup.inlineKeyboard([
@@ -242,6 +244,7 @@ bot.action('open_3', async (ctx) => {
     ])
   );
 });
+
 
 
 
