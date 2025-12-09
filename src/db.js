@@ -1,16 +1,11 @@
-const { MongoClient } = require("mongodb");
-
-const client = new MongoClient(process.env.MONGO_URI);
+const mongoose = require("mongoose");
 
 async function connectDB() {
   try {
-    await client.connect();
+    await mongoose.connect(process.env.MONGO_URI);
     console.log("MongoDB connected");
-
-    return client.db(); // вернёт БД
   } catch (err) {
-    console.error("MongoDB connection failed:", err);
-    process.exit(1);
+    console.error("MongoDB connection error:", err);
   }
 }
 
