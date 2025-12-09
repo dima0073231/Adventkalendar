@@ -218,33 +218,37 @@ bot.action(/open_(\d+)/, async (ctx) => {
     return;
   }
 // SPECIAL DAY 3 — два видео подряд
-bot.action('open_3', async (ctx) => {
-  const day = daysJson["3"];
+// SPECIAL DAY 3 — two videos + buttons, NO MAIN TEXT
+if (dayNumber === 3) {
+    const main = day.sections.main;
 
-  await ctx.answerCbQuery();
+    // Video 1
+    if (day.video_path) {
+        const video1 = path.join(__dirname, day.video_path);
+        if (fs.existsSync(video1)) {
+            await ctx.replyWithVideo({ source: video1 });
+        }
+    }
 
-  // === SEND FIRST VIDEO ===
-  if (day.video_path) {
-    const v1 = path.join(__dirname, day.video_path);
-    await ctx.replyWithVideo({ source: v1 });
-  }
+    // Video 2
+    if (day.video_path_2) {
+        const video2 = path.join(__dirname, day.video_path_2);
+        if (fs.existsSync(video2)) {
+            await ctx.replyWithVideo({ source: video2 });
+        }
+    }
 
-  // === SEND SECOND VIDEO ===
-  if (day.video_path_2) {
-    const v2 = path.join(__dirname, day.video_path_2);
-    await ctx.replyWithVideo({ source: v2 });
-  }
+    // Buttons only (NO TEXT)
+    await ctx.reply(
+        '👇 Zur Übung:',
+        Markup.inlineKeyboard([
+            [Markup.button.callback('🧩 Übung', 'day_3_exercise')],
+            [Markup.button.callback('👉 Weiter zu Tag 4', 'open_4')]
+        ])
+    );
 
-  // === NOW ONLY BUTTONS (NO TEXT AT ALL!) ===
-  return ctx.reply(
-    '👇 Zur Übung:',
-    Markup.inlineKeyboard([
-      [Markup.button.callback('🧩 Übung', 'day_3_exercise')],
-      [Markup.button.callback('👉 Weiter zu Tag 4', 'open_4')]
-    ])
-  );
-});
-
+    return;
+}
 
 
 
