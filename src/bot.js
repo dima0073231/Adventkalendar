@@ -218,39 +218,31 @@ bot.action(/open_(\d+)/, async (ctx) => {
     return;
   }
 // SPECIAL DAY 3 — два видео подряд
-if (dayNumber === 3) {
+bot.action('open_3', async (ctx) => {
+  const day = daysJson["3"];
   const main = day.sections.main;
 
-  // 1️⃣ Видео №1
+  await ctx.answerCbQuery();
+
+  // send both videos
   if (day.video_path) {
-    const video1 = path.join(__dirname, day.video_path);
-    if (fs.existsSync(video1)) {
-      await ctx.replyWithVideo({ source: video1 });
-    }
+    await ctx.replyWithVideo({ source: path.join(__dirname, day.video_path) });
   }
-
-  // 2️⃣ Видео №2
   if (day.video_path_2) {
-    const video2 = path.join(__dirname, day.video_path_2);
-    if (fs.existsSync(video2)) {
-      await ctx.replyWithVideo({ source: video2 });
-    }
+    await ctx.replyWithVideo({ source: path.join(__dirname, day.video_path_2) });
   }
 
-  // 3️⃣ Основной текст после двух видео
-  await ctx.replyWithMarkdown(`*${main.title}*\n\n${main.text}`);
+  // NO TEXT — skip main.title + main.text entirely
 
-  // 4️⃣ Кнопки
-  await ctx.reply(
+  return ctx.reply(
     '👇 Zur Übung:',
     Markup.inlineKeyboard([
       [Markup.button.callback('🧩 Übung', 'day_3_exercise')],
       [Markup.button.callback('👉 Weiter zu Tag 4', 'open_4')]
     ])
   );
+});
 
-  return;
-}
 
 
 
