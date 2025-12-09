@@ -79,7 +79,8 @@
 "3": {
   "day_number": 3,
   "title": "TAG 3 Sich freuen auf / über",
-  "video_path": "videos/tag3.mp4",
+  "video_path": "videos/tag3_1.mp4",
+  "video_path_2": "videos/tag3_2.mp4",
   "sections": {
     "main": {
       "title": "SICH FREUEN AUF/ÜBER",
@@ -101,20 +102,12 @@
         "Wir freuen uns ___ die schönen Erinnerungen vom letzten Winterurlaub."
       ],
       "solutions": [
-        "auf",
-        "über",
-        "über",
-        "auf",
-        "auf",
-        "über",
-        "auf",
-        "über",
-        "auf",
-        "über"
+        "auf", "über", "über", "auf", "auf", "über", "auf", "über", "auf", "über"
       ]
     }
   }
-}, 
+},
+
 "4": {
   "day_number": 4,
   "title": "Der Weihnachtsbaum",

@@ -217,31 +217,40 @@ bot.action(/open_(\d+)/, async (ctx) => {
 
     return;
   }
-// ==================== SPECIAL DAY 3 ====================
+// SPECIAL DAY 3 — два видео подряд
 if (dayNumber === 3) {
   const main = day.sections.main;
 
-  // Видео
+  // 1️⃣ Видео №1
   if (day.video_path) {
-    const videoPath = path.join(__dirname, day.video_path);
-    if (fs.existsSync(videoPath)) {
-      await ctx.replyWithVideo({ source: videoPath });
+    const video1 = path.join(__dirname, day.video_path);
+    if (fs.existsSync(video1)) {
+      await ctx.replyWithVideo({ source: video1 });
     }
   }
 
-  // Описание
+  // 2️⃣ Видео №2
+  if (day.video_path_2) {
+    const video2 = path.join(__dirname, day.video_path_2);
+    if (fs.existsSync(video2)) {
+      await ctx.replyWithVideo({ source: video2 });
+    }
+  }
+
+  // 3️⃣ Основной текст после двух видео
   await ctx.replyWithMarkdown(`*${main.title}*\n\n${main.text}`);
 
-  // Кнопки
-  return ctx.reply(
-    '👇 Wähle weiter:',
+  // 4️⃣ Кнопки
+  await ctx.reply(
+    '👇 Zur Übung:',
     Markup.inlineKeyboard([
-      [Markup.button.callback('🧩 Übung starten', 'day_3_exercise')],
+      [Markup.button.callback('🧩 Übung', 'day_3_exercise')],
       [Markup.button.callback('👉 Weiter zu Tag 4', 'open_4')]
     ])
   );
-}
 
+  return;
+}
 
 
 
