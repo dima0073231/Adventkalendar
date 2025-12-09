@@ -717,15 +717,12 @@ bot.action('day_11_vocab', async (ctx) => {
 });
 
 // ==================== GENERIC SECTIONS (FALLBACK) ====================
-bot.action(/day_(\d+)_(main|vocab|reading)$/, async (ctx) => {
+bot.action(/day_(\d+)_(main|vocab)$/, async (ctx) => {
   const dayNumber = Number(ctx.match[1]);
   const section = ctx.match[2];
 
-  // ❗ ВАЖНО: НЕ ловим кнопки упражнений
+  // НЕ ловимо exercise
   if (section === "exercise") return;
-
-  // ❗ НЕ трогаем Special Reading Day 1
-  if (dayNumber === 1 && section === "reading") return;
 
   const day = daysJson[String(dayNumber)];
   const sec = day.sections[section];
@@ -736,10 +733,6 @@ bot.action(/day_(\d+)_(main|vocab|reading)$/, async (ctx) => {
     msg = sec.text;
   } else if (section === "vocab") {
     msg = `*${sec.title}*\n\n${sec.text}`;
-  } else if (section === "reading") {
-    if (sec.text) msg = `*${sec.title}*\n\n${sec.text}`;
-    else if (sec.intro) msg = `*${sec.title}*\n\n${sec.intro}`;
-    else msg = `*${sec.title}*`;
   }
 
   await ctx.replyWithMarkdown(msg);
