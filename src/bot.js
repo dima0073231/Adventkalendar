@@ -255,7 +255,7 @@ if (dayNumber === 3) {
 
 
   // ---------- SPECIAL DAY 4 ----------
- if (dayNumber === 4) {
+if (dayNumber === 4) {
     const main = day.sections.main;
 
     // Основной текст Tag 4
@@ -276,14 +276,11 @@ if (dayNumber === 3) {
 
     return;
 }
-
 // ==================== TAG 4 — Teile des Baumes ====================
 bot.action('day_4_parts', async (ctx) => {
     const sec = daysJson["4"].sections.vocab_parts;
+    await ctx.answerCbQuery().catch(() => {});
 
-    await ctx.answerCbQuery();
-
-    // Отправляем картинку (если есть)
     if (sec.image_path) {
         const img = path.join(__dirname, sec.image_path);
         if (fs.existsSync(img)) {
@@ -291,15 +288,13 @@ bot.action('day_4_parts', async (ctx) => {
         }
     }
 
-    // Отправляем текст
     await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
 });
 
 // ==================== TAG 4 — Beim Kauf ====================
 bot.action('day_4_buy', async (ctx) => {
     const sec = daysJson["4"].sections.vocab_buy;
-
-    await ctx.answerCbQuery();
+    await ctx.answerCbQuery().catch(() => {});
 
     if (sec.image_path) {
         const img = path.join(__dirname, sec.image_path);
@@ -314,8 +309,7 @@ bot.action('day_4_buy', async (ctx) => {
 // ==================== TAG 4 — Verben ====================
 bot.action('day_4_verbs', async (ctx) => {
     const sec = daysJson["4"].sections.vocab_verbs;
-
-    await ctx.answerCbQuery();
+    await ctx.answerCbQuery().catch(() => {});
 
     if (sec.image_path) {
         const img = path.join(__dirname, sec.image_path);
@@ -326,6 +320,7 @@ bot.action('day_4_verbs', async (ctx) => {
 
     await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
 });
+
 
 
   // ---------- SPECIAL DAY 5 ----------
