@@ -343,6 +343,21 @@ bot.action('day_4_verbs', async (ctx) => {
 
     return;
   }
+  // ==================== TAG 5 VOCAB ====================
+bot.action('day_5_vocab', async (ctx) => {
+    const sec = daysJson["5"].sections.vocab;
+
+    await ctx.answerCbQuery().catch(() => {});
+
+    if (sec.image_path) {
+        const img = path.join(__dirname, sec.image_path);
+        if (fs.existsSync(img)) {
+            await ctx.replyWithPhoto({ source: img });
+        }
+    }
+
+    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
+});
 
   // ---------- SPECIAL DAY 6 ----------
   if (dayNumber === 6) {
