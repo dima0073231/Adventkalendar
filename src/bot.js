@@ -345,28 +345,38 @@ bot.action('day_4_verbs', async (ctx) => {
   }
   
 
-  // ---------- SPECIAL DAY 6 ----------
-  if (dayNumber === 6) {
-    const main = sections.main;
+  // SPECIAL DAY 6 (with opening image)
+if (dayNumber === 6) {
+    const main = day.sections.main;
 
-    if (main) {
-      await ctx.replyWithMarkdown(
-        `*🎄 TAG 6*\n\n*${main.title}*\n\n${main.text}`
-      );
+    // === КАРТИНКА СРАЗУ ПРИ ОТКРЫТИИ ДНЯ ===
+    if (day.image_path) {
+        const imgPath = path.join(__dirname, day.image_path);
+        if (fs.existsSync(imgPath)) {
+            await ctx.replyWithPhoto({ source: imgPath });
+        } else {
+            console.log("DAY 6 IMAGE NOT FOUND:", imgPath);
+        }
     }
 
+    // === ОСНОВНОЙ ТЕКСТ ===
+    await ctx.replyWithMarkdown(
+        `*🎄 TAG 6*\n\n*${main.title}*\n\n${main.text}`
+    );
+
+    // === КНОПКИ ===
     await ctx.reply(
-      '👇 Wähle weiter:',
-      Markup.inlineKeyboard([
-        [Markup.button.callback('🎅🏼 Text', 'day_6_text')],
-        [Markup.button.callback('📚 Wortschatz', 'day_6_vocab')],
-        [Markup.button.callback('📖 Leseverstehen', 'day_6_reading')],
-        [Markup.button.callback('👉 Weiter zu Tag 7', 'open_7')]
-      ])
+        '👇 Wähle weiter:',
+        Markup.inlineKeyboard([
+            [Markup.button.callback('🎅🏼 Text', 'day_6_text')],
+            [Markup.button.callback('📚 Wortschatz', 'day_6_vocab')],
+            [Markup.button.callback('📖 Leseverstehen', 'day_6_reading')],
+            [Markup.button.callback('👉 Weiter zu Tag 7', 'open_7')]
+        ])
     );
 
     return;
-  }
+}
 
   // ---------- SPECIAL DAY 7 ----------
   if (dayNumber === 7) {
