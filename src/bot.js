@@ -343,21 +343,7 @@ bot.action('day_4_verbs', async (ctx) => {
 
     return;
   }
-  // ==================== TAG 5 VOCAB ====================
-bot.action('day_5_vocab', async (ctx) => {
-    const sec = daysJson["5"].sections.vocab;
-
-    await ctx.answerCbQuery().catch(() => {});
-
-    if (sec.image_path) {
-        const img = path.join(__dirname, sec.image_path);
-        if (fs.existsSync(img)) {
-            await ctx.replyWithPhoto({ source: img });
-        }
-    }
-
-    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
-});
+  
 
   // ---------- SPECIAL DAY 6 ----------
   if (dayNumber === 6) {
@@ -665,11 +651,28 @@ bot.action('day_4_verbs', async (ctx) => {
 });
 
 
-// ==================== DAY 5 HANDLERS ====================
+// ==================== DAY 5 HANDLER (with image) ====================
 bot.action('day_5_vocab', async (ctx) => {
-  const sec = daysJson["5"].sections.vocab;
-  await ctx.answerCbQuery().catch(() => {});
-  await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
+    const sec = daysJson["5"].sections.vocab;
+
+    await ctx.answerCbQuery().catch(() => {});
+
+    // === КАРТИНКА ===
+    if (sec.image_path) {
+        const img = path.join(__dirname, sec.image_path);
+
+        console.log("Trying image:", img);
+
+        if (fs.existsSync(img)) {
+            await ctx.replyWithPhoto({ source: img });
+        } else {
+            console.log("IMAGE NOT FOUND:", img);
+            await ctx.reply("⚠️ Image not found on server.");
+        }
+    }
+
+    // === ТЕКСТ ===
+    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
 });
 
 // ==================== DAY 6 HANDLERS ====================
