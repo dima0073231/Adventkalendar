@@ -604,23 +604,51 @@ bot.action(/q3_(\d+)_(auf|über)/, async (ctx) => {
 
 
 // ==================== DAY 4 HANDLERS ====================
-bot.action('day_4_vocab_parts', async (ctx) => {
-  const sec = daysJson["4"].sections.vocab_parts;
-  await ctx.answerCbQuery().catch(() => {});
-  await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
+// Teile des Baumes
+bot.action('day_4_parts', async (ctx) => {
+    const sec = daysJson["4"].sections.vocab_parts;
+    await ctx.answerCbQuery().catch(() => {});
+
+    if (sec.image_path) {
+        const img = path.join(__dirname, sec.image_path);
+        if (fs.existsSync(img)) {
+            await ctx.replyWithPhoto({ source: img });
+        }
+    }
+
+    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
 });
 
-bot.action('day_4_vocab_buy', async (ctx) => {
-  const sec = daysJson["4"].sections.vocab_buy;
-  await ctx.answerCbQuery().catch(() => {});
-  await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
+// Beim Kauf
+bot.action('day_4_buy', async (ctx) => {
+    const sec = daysJson["4"].sections.vocab_buy;
+    await ctx.answerCbQuery().catch(() => {});
+
+    if (sec.image_path) {
+        const img = path.join(__dirname, sec.image_path);
+        if (fs.existsSync(img)) {
+            await ctx.replyWithPhoto({ source: img });
+        }
+    }
+
+    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
 });
 
-bot.action('day_4_vocab_verbs', async (ctx) => {
-  const sec = daysJson["4"].sections.vocab_verbs;
-  await ctx.answerCbQuery().catch(() => {});
-  await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
+// Verben
+bot.action('day_4_verbs', async (ctx) => {
+    const sec = daysJson["4"].sections.vocab_verbs;
+    await ctx.answerCbQuery().catch(() => {});
+
+    if (sec.image_path) {
+        const img = path.join(__dirname, sec.image_path);
+        if (fs.existsSync(img)) {
+            await ctx.replyWithPhoto({ source: img });
+        }
+    }
+
+    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
 });
+
 
 // ==================== DAY 5 HANDLERS ====================
 bot.action('day_5_vocab', async (ctx) => {
