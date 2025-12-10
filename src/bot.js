@@ -255,27 +255,78 @@ if (dayNumber === 3) {
 
 
   // ---------- SPECIAL DAY 4 ----------
-  if (dayNumber === 4) {
-    const main = sections.main;
+ if (dayNumber === 4) {
+    const main = day.sections.main;
 
-    if (main) {
-      await ctx.replyWithMarkdown(
+    // Основной текст Tag 4
+    await ctx.replyWithMarkdown(
         `*🎄 TAG 4*\n\n*${main.title}*\n\n${main.text}`
-      );
-    }
+    );
 
+    // Кнопки
     await ctx.reply(
-      '👇 Wähle Vokabeln:',
-      Markup.inlineKeyboard([
-        [Markup.button.callback('🪵 Teile des Baumes', 'day_4_vocab_parts')],
-        [Markup.button.callback('🛍️ Beim Kauf', 'day_4_vocab_buy')],
-        [Markup.button.callback('💡 Verben', 'day_4_vocab_verbs')],
-        [Markup.button.callback('👉 Weiter zu Tag 5', 'open_5')]
-      ])
+        '👇 Wähle weiter:',
+        Markup.inlineKeyboard([
+            [Markup.button.callback('🪵 Teile des Baumes', 'day_4_parts')],
+            [Markup.button.callback('🛍️ Beim Kauf', 'day_4_buy')],
+            [Markup.button.callback('💡 Verben', 'day_4_verbs')],
+            [Markup.button.callback('👉 Weiter zu Tag 5', 'open_5')]
+        ])
     );
 
     return;
-  }
+}
+
+// ==================== TAG 4 — Teile des Baumes ====================
+bot.action('day_4_parts', async (ctx) => {
+    const sec = daysJson["4"].sections.vocab_parts;
+
+    await ctx.answerCbQuery();
+
+    // Отправляем картинку (если есть)
+    if (sec.image_path) {
+        const img = path.join(__dirname, sec.image_path);
+        if (fs.existsSync(img)) {
+            await ctx.replyWithPhoto({ source: img });
+        }
+    }
+
+    // Отправляем текст
+    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
+});
+
+// ==================== TAG 4 — Beim Kauf ====================
+bot.action('day_4_buy', async (ctx) => {
+    const sec = daysJson["4"].sections.vocab_buy;
+
+    await ctx.answerCbQuery();
+
+    if (sec.image_path) {
+        const img = path.join(__dirname, sec.image_path);
+        if (fs.existsSync(img)) {
+            await ctx.replyWithPhoto({ source: img });
+        }
+    }
+
+    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
+});
+
+// ==================== TAG 4 — Verben ====================
+bot.action('day_4_verbs', async (ctx) => {
+    const sec = daysJson["4"].sections.vocab_verbs;
+
+    await ctx.answerCbQuery();
+
+    if (sec.image_path) {
+        const img = path.join(__dirname, sec.image_path);
+        if (fs.existsSync(img)) {
+            await ctx.replyWithPhoto({ source: img });
+        }
+    }
+
+    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
+});
+
 
   // ---------- SPECIAL DAY 5 ----------
   if (dayNumber === 5) {
