@@ -771,27 +771,31 @@ bot.action('day_7_reading', async (ctx) => {
 
 // ==================== DAY 8 HANDLERS (TEST) ====================
 bot.action('day_8_vocab', async (ctx) => {
-  const sec = daysJson["8"].sections.vocab;
+    const sec = daysJson["8"].sections.vocab;
 
-  await ctx.answerCbQuery().catch(() => {});
+    await ctx.answerCbQuery().catch(() => {});
 
-  await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.intro}`);
-
-  for (let i = 0; i < sec.questions.length; i++) {
-    const q = sec.questions[i];
-
-    const buttons = q.options.map((opt, idx) =>
-      Markup.button.callback(opt, `q8_${i}_${idx}`)
+    // Заголовок
+    await ctx.replyWithMarkdown(
+        `*${sec.title}*\n\n${sec.intro}`
     );
 
-    await ctx.reply(
-      `*${i + 1}. ${q.q}*`,
-      {
-        parse_mode: 'Markdown',
-        ...Markup.inlineKeyboard([buttons])
-      }
-    );
-  }
+    // Каждая задача
+    for (let i = 0; i < sec.questions.length; i++) {
+        const q = sec.questions[i];
+
+        await ctx.reply(
+            `*${i + 1}. ${q.q}*`,
+            {
+                parse_mode: "Markdown",
+                reply_markup: {
+                    inline_keyboard: q.options.map((opt, idx) => [
+                        { text: opt, callback_data: `q8_${i}_${idx}` }
+                    ])
+                }
+            }
+        );
+    }
 });
 
 bot.action(/q8_(\d+)_(\d+)/, async (ctx) => {
