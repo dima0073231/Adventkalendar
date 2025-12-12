@@ -701,7 +701,7 @@ bot.action('day_6_text', async (ctx) => {
 
     // Отправляем сам текст
     await ctx.reply(sec.text);
-});
+}); 
 
 bot.action('day_6_vocab', async (ctx) => {
   const sec = daysJson["6"].sections.vocab;
