@@ -409,6 +409,13 @@ if (dayNumber === 6) {
         `*🎄 TAG 8*\n\n*${main.title}*\n\n${main.text}`
       );
     }
+    // Показываем ОДНО видео
+    if (day.video_path) {
+        const vid = path.join(__dirname, day.video_path);
+        if (fs.existsSync(vid)) {
+            await ctx.replyWithVideo({ source: vid });
+        }
+    }
 
     await ctx.reply(
       '👇 Wähle weiter:',

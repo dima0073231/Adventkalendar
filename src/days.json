@@ -257,6 +257,7 @@
 },
 "8": {
   "day_number": 8,
+   "video_path": "videos/video1.MOV",
   "title": "",
   "sections": {
     "main": {
