@@ -700,7 +700,7 @@ bot.action('day_6_text', async (ctx) => {
     }
 
     // Отправляем сам текст
-    await ctx.replyWithMarkdown(sec.text);
+    await ctx.reply(sec.text);
 });
 
 bot.action('day_6_vocab', async (ctx) => {
