@@ -687,9 +687,20 @@ bot.action('day_5_vocab', async (ctx) => {
 
 // ==================== DAY 6 HANDLERS ====================
 bot.action('day_6_text', async (ctx) => {
-  const sec = daysJson["6"].sections.text;
-  await ctx.answerCbQuery().catch(() => {});
-  await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
+    const sec = daysJson["6"].sections.text;
+
+    await ctx.answerCbQuery().catch(() => {});
+
+    // Добавляем картинку если есть
+    if (sec.image_path) {
+        const img = path.join(__dirname, sec.image_path);
+        if (fs.existsSync(img)) {
+            await ctx.replyWithPhoto({ source: img });
+        }
+    }
+
+    // Отправляем сам текст
+    await ctx.replyWithMarkdown(sec.text);
 });
 
 bot.action('day_6_vocab', async (ctx) => {
