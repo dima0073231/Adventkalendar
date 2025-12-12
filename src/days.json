@@ -154,9 +154,10 @@
 "6": {
   "day_number": 6,
   "title": "Nikolaustag in Deutschland",
-  "image_path": "images/img5.jpg",
+ 
   "sections": {
     "main": {
+       "image_path": "images/img5.jpg",
       "title": "🎅 Nikolaustag",
       "text": "Alles Gute zum Nikolaustag 💫\nKinder in Deutschland stellen ihre Stiefel 🥾 vor die Tür. Am Morgen finden sie kleine Überraschungen darin.\nLass uns zusammen lernen, welche Traditionen es an diesem Tag gibt 😉\n\n👇 Tippe auf *Text 🎅🏼*, um mehr zu erfahren."
     },
