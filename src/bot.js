@@ -847,55 +847,44 @@ bot.action(/q8_(\d+)_(\d+)/, async (ctx) => {
 bot.action('day_9_song1', async (ctx) => {
   const sec = daysJson["9"].sections.song1;
   await ctx.answerCbQuery().catch(() => {});
-  
+
   try {
-    // Сначала отправляем аудио файлом
-    await ctx.replyWithAudio({
-      source: sec.audio_file, // путь к файлу
-    }, {
-      caption: `${sec.title}\n\n${sec.text}`,
-      parse_mode: 'Markdown'
-    });
-  } catch (error) {
-    console.error('Ошибка при отправке аудио 1:', error);
-    // Если файл не найден, отправляем только текст
-    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}\n\n🎧 *AUDIO:* Файл не найден (${sec.audio_file})`);
+    await ctx.replyWithAudio({ source: sec.audio_file });
+    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
+  } catch (err) {
+    console.error(err);
+    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
   }
 });
+
 
 bot.action('day_9_song2', async (ctx) => {
   const sec = daysJson["9"].sections.song2;
   await ctx.answerCbQuery().catch(() => {});
-  
+
   try {
-    await ctx.replyWithAudio({
-      source: sec.audio_file,
-    }, {
-      caption: `${sec.title}\n\n${sec.text}`,
-      parse_mode: 'Markdown'
-    });
-  } catch (error) {
-    console.error('Ошибка при отправке аудио 2:', error);
-    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}\n\n🎧 *AUDIO:* Файл не найден (${sec.audio_file})`);
+    await ctx.replyWithAudio({ source: sec.audio_file });
+    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
+  } catch (err) {
+    console.error(err);
+    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
   }
 });
+
 
 bot.action('day_9_song3', async (ctx) => {
   const sec = daysJson["9"].sections.song3;
   await ctx.answerCbQuery().catch(() => {});
-  
+
   try {
-    await ctx.replyWithAudio({
-      source: sec.audio_file,
-    }, {
-      caption: `${sec.title}\n\n${sec.text}`,
-      parse_mode: 'Markdown'
-    });
-  } catch (error) {
-    console.error('Ошибка при отправке аудио 3:', error);
-    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}\n\n🎧 *AUDIO:* Файл не найден (${sec.audio_file})`);
+    await ctx.replyWithAudio({ source: sec.audio_file });
+    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
+  } catch (err) {
+    console.error(err);
+    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
   }
 });
+
 
 // ==================== DAY 10 HANDLERS ====================
 bot.action('day_10_vocab', async (ctx) => {
