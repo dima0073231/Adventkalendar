@@ -428,6 +428,29 @@ if (dayNumber === 6) {
     return;
   }
 
+  // ---------- SPECIAL DAY 9 ----------
+  if (dayNumber === 9) {
+    const main = sections.main;
+
+    if (main) {
+      await ctx.replyWithMarkdown(
+        `*🎄 TAG 9*\n\n*${main.title}*\n\n${main.text}`
+      );
+    }
+
+    await ctx.reply(
+      '👇 Wähle ein Lied:',
+      Markup.inlineKeyboard([
+        [Markup.button.callback('🎵 Lied 1 + Liedtext', 'day_9_song1')],
+        [Markup.button.callback('🎵 Lied 2 + Liedtext', 'day_9_song2')],
+        [Markup.button.callback('🎵 Lied 3 + Liedtext', 'day_9_song3')],
+        [Markup.button.callback('👉 Weiter zu Tag 10', 'open_10')]
+      ])
+    );
+
+    return;
+  }
+
   // ---------- SPECIAL DAY 10 ----------
   if (dayNumber === 10) {
     const main = sections.main;
@@ -818,6 +841,68 @@ bot.action(/q8_(\d+)_(\d+)/, async (ctx) => {
     `❌ Неправильно!\n${explanation}`,
     { show_alert: true }
   ).catch(() => {});
+});
+
+// Хендлеры для дня 9 (Weihnachtslieder)
+bot.action('day_9_song1', async (ctx) => {
+  const sec = daysJson["9"].sections.song1;
+  await ctx.answerCbQuery().catch(() => {});
+  
+  // Отправляем аудио с текстом в подписи
+  if (sec.audio_file_id && sec.audio_file_id !== "ВАШ_AUDIO_ID_1") {
+    await ctx.replyWithAudio(sec.audio_file_id, {
+      caption: `${sec.title}\n\n${sec.text}`,
+      parse_mode: 'Markdown'
+    });
+  } else {
+    // Если file_id не задан, отправляем только текст
+    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}\n\n🎧 *AUDIO:* Datei-ID nicht konfiguriert`);
+  }
+});
+
+bot.action('day_9_song2', async (ctx) => {
+  const sec = daysJson["9"].sections.song2;
+  await ctx.answerCbQuery().catch(() => {});
+  
+  if (sec.audio_file_id && sec.audio_file_id !== "ВАШ_AUDIO_ID_2") {
+    await ctx.replyWithAudio(sec.audio_file_id, {
+      caption: `${sec.title}\n\n${sec.text}`,
+      parse_mode: 'Markdown'
+    });
+  } else {
+    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}\n\n🎧 *AUDIO:* Datei-ID nicht konfiguriert`);
+  }
+});
+
+bot.action('day_9_song3', async (ctx) => {
+  const sec = daysJson["9"].sections.song3;
+  await ctx.answerCbQuery().catch(() => {});
+  
+  if (sec.audio_file_id && sec.audio_file_id !== "ВАШ_AUDIO_ID_3") {
+    await ctx.replyWithAudio(sec.audio_file_id, {
+      caption: `${sec.title}\n\n${sec.text}`,
+      parse_mode: 'Markdown'
+    });
+  } else {
+    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}\n\n🎧 *AUDIO:* Datei-ID nicht konfiguriert`);
+  }
+});
+
+// Добавьте в любое место для получения file_id от аудио
+bot.on('message', async (msg) => {
+  if (msg.audio) {
+    console.log('Получен аудиофайл:');
+    console.log('file_id:', msg.audio.file_id);
+    console.log('file_unique_id:', msg.audio.file_unique_id);
+    console.log('duration:', msg.audio.duration, 'сек');
+    console.log('file_name:', msg.audio.file_name);
+    
+    // Можно автоматически отправить file_id в чат
+    await bot.sendMessage(msg.chat.id, 
+      `file_id: \`${msg.audio.file_id}\`\n\nСкопируй этот ID в days.json`,
+      { parse_mode: 'Markdown' }
+    );
+  }
 });
 
 // ==================== DAY 10 HANDLERS ====================

@@ -313,6 +313,29 @@
     }
   }
 },
+"9": {
+    "sections": {
+        "main": {
+            "title": "Tag 9 – Weihnachtslieder 🎵",
+            "text": "Heute wird’s festlich! 🌟\nDu kannst dich auf wunderschöne deutsche Weihnachtslieder freuen 🎶\nHör sie dir an, genieße die Stimmung – und schau dir die Texte ganz genau an, um jedes Wort zu verstehen.\n\nSo lernst du Deutsch mit Weihnachtszauber! ✨🎁"
+        },
+        "song1": {
+            "title": "🎵 Lied 1: O Tannenbaum",
+            "text": "O Tannenbaum, o Tannenbaum,\nwie grün sind deine Blätter!\nDu grünst nicht nur zur Sommerzeit,\nnein, auch im Winter, wenn es schneit.\nO Tannenbaum, o Tannenbaum,\nwie grün sind deine Blätter!\n\nO Tannenbaum, o Tannenbaum,\ndu kannst mir sehr gefallen!\nWie oft hat schon zur Weihnachtszeit\nein Baum von dir mich hoch erfreut.\nO Tannenbaum, o Tannenbaum,\ndu kannst mir sehr gefallen!\n\nO Tannenbaum, o Tannenbaum,\ndein Kleid will mich was lehren:\nDie Hoffnung und Beständigkeit\ngibt Trost und Kraft zu jeder Zeit.\nO Tannenbaum, o Tannenbaum,\ndein Kleid will mich was lehren.",
+            "audio_file_id": "ВАШ_AUDIO_ID_1"
+        },
+        "song2": {
+            "title": "🎵 Lied 2: Es schneit",
+            "text": "Es schneit\nEs schneit!\nKommt alle aus dem Haus!\nDie Welt\nDie Welt\nSieht wie gepudert aus!\n\nEs schneit\nEs schneit!\nDas müsst ihr einfach seh'n!\nKommt mit\nKommt mit!\nWir wollen rodeln geh'n!\n\nWir laufen durch die weiße Pracht\nUnd machen eine Schneeballschlacht\nAber bitte nicht\nMitten ins Gesicht!\n\nEs schneit\nEs schneit!\nKommt alle aus dem Haus!\nDie Welt\nDie Welt\nSieht wie gepudert aus!\nEs schneit\nEs schneit!\nDas müsst ihr einfach seh'n!\nKommt mit\nKommt mit!\nWir wollen rodeln geh'n!\n\nWir holen uns're Schlitten raus\nUnd laufen in den Wald hinaus\nUnd dann bauen wir\nDen Schneemann vor der Tür!\n\nEs schneit\nEs schneit!\nKommt alle aus dem Haus!\nDie Welt\nDie Welt\nSieht wie gepudert aus!\nEs schneit\nEs schneit!\nDas müsst ihr einfach seh'n!\nKommt mit\nKommt mit!\nWir wollen rodeln geh'n!\n\nAus grau wird weiß\nAus laut wird leis'\nDie Welt wird zugedeckt\nUnd von der Frühlingssonne wird sie wieder aufgeweckt!\n\nEs schneit\nEs schneit!\nKommt alle aus dem Haus!\nDie Welt\nDie Welt\nSieht wie gepudert aus!\nEs schneit\nEs schneit!\nDas müsst ihr einfach seh'n!\nKommt mit\nKommt mit!\nWir wollen rodeln geh'n!\n\nEs schneit!\nEs schneit!\nEs schneit!",
+            "audio_file_id": "ВАШ_AUDIO_ID_2"
+        },
+        "song3": {
+            "title": "🎵 Lied 3: In der Weihnachtsbäckerei",
+            "text": "In der Weihnachtsbäckerei\nGibt es manche Leckerei\nZwischen Mehl und Milch\nMacht so mancher Knilch\nEine riesengroße Kleckerei\nIn der Weihnachtsbäckerei\nIn der Weihnachtsbäckerei\n\nWo ist das Rezept geblieben\nVon den Plätzchen, die wir lieben?\nWer hat das Rezept\nVerschleppt?\n„Ich nicht\"\n„Du vielleicht?\"\n„Nee, ich auch nicht\"\nNa, dann müssen wir es packen\nEinfach frei nach Schnauze backen\nSchmeißt den Ofen an (oh ja!)\nUnd ran!\n\nIn der Weihnachtsbäckerei\nGibt es manche Leckerei\nZwischen Mehl und Milch\nMacht so mancher Knilch\nEine riesengroße Kleckerei\nIn der Weihnachtsbäckerei\nIn der Weihnachtsbäckerei\n\nBrauchen wir nicht Schokolade\nHonig, Nüsse und Succade\nUnd ein bisschen Zimt?\nDas stimmt\nButter, Mehl und Milch verrühren\nZwischendurch einmal probieren\nUnd dann kommt das Ei (pass auf)\nVorbei\n\nIn der Weihnachtsbäckerei\nGibt es manche Leckerei\nZwischen Mehl und Milch\nMacht so mancher Knilch\nEine riesengroße Kleckerei\nIn der Weihnachtsbäckerei\nIn der Weihnachtsbäckerei\n\nBitte mal zur Seite treten\nDenn wir brauchen Platz zum Kneten\nSind die Finger rein?\nDu Schwein\nSind die Plätzchen, die wir stechen\nErstmal auf den Ofenblechen\nWarten wir gespannt\nVerbrannt\n\nIn der Weihnachtsbäckerei\nGibt es manche Leckerei\nZwischen Mehl und Milch\nMacht so mancher Knilch\nEine riesengroße Kleckerei\nIn der Weihnachtsbäckerei\nIn der Weihnachtsbäckerei",
+            "audio_file_id": "ВАШ_AUDIO_ID_3"
+        }
+    }
+},
 "10": {
   "day_number": 10,
   "title": "Fest – Feiertag – Wochenende",
