@@ -452,10 +452,15 @@ if (dayNumber === 6) {
   }
 
   // ---------- SPECIAL DAY 10 ----------
-if (dayNumber === 10) {
-  const main = day.sections.main;
+  if (dayNumber === 10) {
+    const main = sections.main;
 
-  // 🎥 Видео
+    if (main) {
+      await ctx.replyWithMarkdown(
+        `*🎄 TAG 10*\n\n*${main.title}*\n\n${main.text}`
+      );
+    }
+     // 🎥 Видео
   if (main.video_path) {
     const videoPath = path.join(__dirname, main.video_path);
     if (fs.existsSync(videoPath)) {
@@ -463,18 +468,17 @@ if (dayNumber === 10) {
     }
   }
 
-  // 📌 Кнопки
-  await ctx.reply(
-    '👇 Wähle weiter:',
-    Markup.inlineKeyboard([
-      [Markup.button.callback('📝 Übung', 'day_10_vocab')],
-      [Markup.button.callback('💡 Lösungen', 'day_10_reading')]
-    ])
-  );
+    await ctx.reply(
+      '👇 Wähle weiter:',
+      Markup.inlineKeyboard([
+        [Markup.button.callback('📝 Übung', 'day_10_vocab')],
+        [Markup.button.callback('💡 Lösungen', 'day_10_reading')],
+        [Markup.button.callback('👉 Weiter zu Tag 11', 'open_11')]
+      ])
+    );
 
-  return;
-}
-
+    return;
+  }
 
   // ---------- SPECIAL DAY 11 ----------
   if (dayNumber === 11) {
