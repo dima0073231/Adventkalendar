@@ -748,19 +748,21 @@ bot.action('day_6_reading', async (ctx) => {
 
   for (let i = 0; i < sec.questions.length; i++) {
     const q = sec.questions[i];
-    const buttons = q.options.map((opt, idx) =>
+
+    const buttons = q.options.map((opt, idx) => [
       Markup.button.callback(opt, `q6_${i}_${idx}`)
-    );
+    ]);
 
     await ctx.reply(
       `*${i + 1}. ${q.q}*`,
       {
         parse_mode: 'Markdown',
-        ...Markup.inlineKeyboard([buttons])
+        ...Markup.inlineKeyboard(buttons)
       }
     );
   }
 });
+
 
 bot.action(/q6_(\d+)_(\d+)/, async (ctx) => {
   const qIndex = Number(ctx.match[1]);
