@@ -410,12 +410,13 @@ if (dayNumber === 6) {
       );
     }
     // Показываем ОДНО видео
-    if (day.video_path) {
-        const vid = path.join(__dirname, day.video_path);
-        if (fs.existsSync(vid)) {
-            await ctx.replyWithVideo({ source: vid });
-        }
+  if (day.video_path) {
+    const vid = path.join(__dirname, day.video_path);
+    if (fs.existsSync(vid)) {
+        await ctx.replyWithAnimation({ source: vid });
     }
+}
+
 
     await ctx.reply(
       '👇 Wähle weiter:',
@@ -461,12 +462,13 @@ if (dayNumber === 6) {
       );
     }
      // 🎥 Видео
-  if (main.video_path) {
-    const videoPath = path.join(__dirname, main.video_path);
-    if (fs.existsSync(videoPath)) {
-      await ctx.replyWithVideo({ source: videoPath });
-    }
+ if (main.video_path) {
+  const videoPath = path.join(__dirname, main.video_path);
+  if (fs.existsSync(videoPath)) {
+    await ctx.replyWithAnimation({ source: videoPath });
   }
+}
+
 
     await ctx.reply(
       '👇 Wähle weiter:',
