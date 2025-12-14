@@ -338,11 +338,12 @@
 },
 "10": {
   "day_number": 10,
-  "title": "Fest – Feiertag – Wochenende",
+  "title": "",
   "sections": {
     "main": {
-      "title": "🎥 das Fest – der Feiertag – das Wochenende",
-      "text": "Сегодня у нас видео-урок по трём важным словам:\n\n• **das Fest** 🎉 – праздник, торжество\n• **der Feiertag** 📅 – официальный выходной день\n• **das Wochenende** 🛌 – выходные (суббота и воскресенье)\n\nПосмотри видео, а затем выполни упражнение👇"
+      "title": "",
+      "text": "",
+      "video_path": "videos/video2.MOV"
     },
 
     "vocab": {
