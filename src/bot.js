@@ -520,9 +520,6 @@ if (dayNumber === 12) {
     }
   }
 
-  // 📝 затем основной текст
-  await ctx.replyWithMarkdown(main.text);
-
   // 👉 кнопка дальше
   await ctx.reply(
     '👇 Weiter:',
