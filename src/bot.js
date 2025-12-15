@@ -485,6 +485,11 @@ if (dayNumber === 6) {
   // ---------- SPECIAL DAY 11 ----------
  if (dayNumber === 11) {
   const main = day.sections.main;
+   if (main) {
+      await ctx.replyWithMarkdown(
+        `*🎄 TAG 11*\n\n*${main.title}*\n\n${main.text}`
+      );
+    }
 
   await ctx.reply(main.text);
 
