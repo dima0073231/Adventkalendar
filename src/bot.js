@@ -485,11 +485,7 @@ if (dayNumber === 6) {
   // ---------- SPECIAL DAY 11 ----------
  if (dayNumber === 11) {
   const main = day.sections.main;
-   if (main) {
-      await ctx.replyWithMarkdown(
-        `*🎄 TAG 11*\n\n*${main.title}*\n\n${main.text}`
-      );
-    }
+  
 
   await ctx.reply(main.text);
 
@@ -501,6 +497,35 @@ if (dayNumber === 6) {
     ])
   );
 }
+// ---------- SPECIAL DAY 12 ----------
+if (dayNumber === 12) {
+  const main = day.sections.main;
+
+  // 📸 отправляем все картинки подряд
+  if (main.images && Array.isArray(main.images)) {
+    for (const imgPath of main.images) {
+      const fullPath = path.join(__dirname, imgPath);
+      if (fs.existsSync(fullPath)) {
+        await ctx.replyWithPhoto({ source: fullPath });
+      }
+    }
+  }
+
+  // 📝 затем основной текст
+  await ctx.replyWithMarkdown(main.text);
+
+  // 👉 кнопка дальше
+  await ctx.reply(
+    '👇 Weiter:',
+    Markup.inlineKeyboard([
+      [Markup.button.callback('👉 Weiter zu Tag 13', 'open_13')]
+    ])
+  );
+
+  return;
+}
+
+
 
 
 
