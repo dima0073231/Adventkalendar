@@ -487,7 +487,11 @@ if (dayNumber === 6) {
   const main = day.sections.main;
   
 
-  await ctx.reply(main.text);
+ if (main) {
+      await ctx.replyWithMarkdown(
+        `*🎄 TAG 11*\n\n*${main.title}*\n\n${main.text}`
+      );
+    }
 
   return ctx.reply(
     '👇 Wähle weiter:',
@@ -500,6 +504,11 @@ if (dayNumber === 6) {
 // ---------- SPECIAL DAY 12 ----------
 if (dayNumber === 12) {
   const main = day.sections.main;
+  if (main) {
+      await ctx.replyWithMarkdown(
+        `*🎄 TAG 12*\n\n*${main.title}*\n\n${main.text}`
+      );
+    }
 
   // 📸 отправляем все картинки подряд
   if (main.images && Array.isArray(main.images)) {
