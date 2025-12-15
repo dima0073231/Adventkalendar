@@ -362,14 +362,10 @@
   "title": "Winter & Weihnachts-Bucket-List",
   "sections": {
     "main": {
-      "title": "❄️ Winter Bucket List",
-      "text": "Heute wird es gemütlich und kreativ! ✨\nDu bekommst eine Winter- & Weihnachts-Bucket-List – viele kleine Ideen, die dir helfen, den Winter zu genießen und dabei Deutsch zu lernen. 🇩🇪❄️\n\nMach es dir mit einer Tasse Tee bequem ☕, lies die Liste und such dir aus, was du ausprobieren möchtest.\nJede Aktivität ist eine schöne Möglichkeit, neue Wörter zu lernen und in die deutsche Kultur einzutauchen. 💫\n\nViel Spaß und eine schöne Adventszeit! 🎁\n\n💡 *Tipp für Lernende:* Schreibe zu jedem Punkt später einen Satz im Perfekt.\nZum Beispiel:\n• Ich war auf dem Weihnachtsmarkt.\n• Ich habe ein deutsches Lied gelernt.\n\n👇 Tippe auf *Bucket-Liste*, um die Datei zu öffnen."
+      "text": "Heute wird es gemütlich und ein bisschen kreativ! ✨\nDu bekommst eine Winter- & Weihnachts-Bucket-List – viele kleine Ideen, die dir helfen, den Winter zu genießen und dabei Deutsch zu lernen. 🇩🇪❄️\n\nMach es dir mit einer Tasse Tee bequem ☕, lies die Liste und such dir aus, was du ausprobieren möchtest.\nJede Aktivität ist eine schöne Möglichkeit, neue Wörter zu lernen und in die deutsche Kultur einzutauchen. 💫\n\nViel Spaß und eine schöne Adventszeit! 🎁\n\n💡 *Tipp für Lernende:*\nDu kannst jeden Punkt abhaken und einen Satz im Perfekt schreiben, was du schon gemacht hast.\nZum Beispiel:\n\nIch war auf dem Weihnachtsmarkt.\nIch habe ein deutsches Lied gelernt."
     },
-
-    "vocab": {
-      "title": "📝 Winter Bucket-Liste",
-      "file_path": "fotos/foto.png",
-      "text": "Hier ist deine Winter- & Weihnachts-Bucket-Liste! ❄️🎄\nSpeichere sie, drucke sie aus oder hake digital ab, was du schon gemacht hast!"
+    "bucket": {
+      "file_path": "fotos/foto.png"
     }
   }
 }
