@@ -916,20 +916,20 @@ bot.action('day_9_song2', async (ctx) => {
 
   const audioPath = path.join(__dirname, sec.audio_file);
 
+  // 1️⃣ Отправляем аудио
   if (fs.existsSync(audioPath)) {
     await ctx.replyWithAudio(
       { source: audioPath },
-      {
-        caption: `*${sec.title}*\n\n${sec.text}`,
-        parse_mode: 'Markdown'
-      }
+      { caption: sec.title } // ТОЛЬКО короткий заголовок
     );
   } else {
-    await ctx.replyWithMarkdown(
-      `*${sec.title}*\n\n${sec.text}\n\n❌ Аудиофайл не найден`
-    );
+    await ctx.reply(`🎧 Аудио не найдено: ${sec.audio_file}`);
   }
+
+  // 2️⃣ Отправляем текст песни ОТДЕЛЬНО
+  await ctx.reply(sec.text);
 });
+
 
 
 
