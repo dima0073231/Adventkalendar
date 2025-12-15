@@ -483,25 +483,25 @@ if (dayNumber === 6) {
   }
 
   // ---------- SPECIAL DAY 11 ----------
-  if (dayNumber === 11) {
-    const main = sections.main;
-
-    if (main) {
+ if (dayNumber === 11) {
+  const main = day.sections.main;
+   if (main) {
       await ctx.replyWithMarkdown(
         `*🎄 TAG 11*\n\n*${main.title}*\n\n${main.text}`
       );
     }
 
-    await ctx.reply(
-      '👇 Wähle weiter:',
-      Markup.inlineKeyboard([
-        [Markup.button.callback('📝 Bucket-Liste', 'day_11_bucket')],
-        [Markup.button.callback('👉 Weiter zu Tag 12', 'open_12')]
-      ])
-    );
+  await ctx.reply(main.text);
 
-    return;
-  }
+  return ctx.reply(
+    '👇 Wähle weiter:',
+    Markup.inlineKeyboard([
+      [Markup.button.callback('📄 Bucket-Liste', 'day_11_bucket')],
+      [Markup.button.callback('👉 Weiter zu Tag 12', 'open_12')]
+    ])
+  );
+}
+
 
   // ---------- DEFAULT FOR OTHER DAYS ----------
   const main = sections.main;
