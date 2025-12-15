@@ -495,7 +495,7 @@ if (dayNumber === 6) {
     await ctx.reply(
       '👇 Wähle weiter:',
       Markup.inlineKeyboard([
-        [Markup.button.callback('📝 Bucket-Liste', 'day_11_vocab')],
+        [Markup.button.callback('📝 Bucket-Liste', 'day_11_bucket')],
         [Markup.button.callback('👉 Weiter zu Tag 12', 'open_12')]
       ])
     );
