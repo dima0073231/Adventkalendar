@@ -482,47 +482,64 @@ if (dayNumber === 6) {
     return;
   }
 
-  // ---------- SPECIAL DAY 11 ----------
- if (dayNumber === 11) {
+  // ==================== SPECIAL DAY 11 ====================
+if (dayNumber === 11) {
   const main = day.sections.main;
-  
 
-  if (main) {
-    await ctx.replyWithMarkdown(
-      `*🎄 TAG 11*\n\n${main.text}`
-    );
-  }
+  if (main?.image_path) {
+    const img = path.join(__dirname, main.image_path);
 
-  return ctx.reply(
-    '👇 Wähle weiter:',
-    Markup.inlineKeyboard([
-      [Markup.button.callback('📄 Bucket-Liste', 'day_11_bucket')],
-      [Markup.button.callback('👉 Weiter zu Tag 12', 'open_12')]
-    ])
-  );
-}
-// ---------- SPECIAL DAY 12 ----------
-if (dayNumber === 12) {
-  const main = day.sections.main;
-  if (main) {
-    await ctx.replyWithMarkdown(
-      `*🎄 TAG 12*\n\n${main.text}`
-    );
-  }
-
-  // 📸 отправляем все картинки подряд
-  if (main.images && Array.isArray(main.images)) {
-    for (const imgPath of main.images) {
-      const fullPath = path.join(__dirname, imgPath);
-      if (fs.existsSync(fullPath)) {
-        await ctx.replyWithPhoto({ source: fullPath });
-      }
+    if (fs.existsSync(img)) {
+      await ctx.replyWithPhoto(
+        { source: img },
+        {
+          caption: main.text,
+          parse_mode: 'Markdown',
+          reply_markup: {
+            inline_keyboard: [
+              [{ text: '👉 Weiter zu Tag 12', callback_data: 'open_12' }]
+            ]
+          }
+        }
+      );
     }
   }
 
-  // 👉 кнопка дальше
+  return;
+}
+
+// ==================== SPECIAL DAY 12 ====================
+if (dayNumber === 12) {
+  const main = day.sections.main;
+
+  // 1️⃣ Отправляем АЛЬБОМ (одним сообщением)
+  if (main.images && Array.isArray(main.images)) {
+    const media = main.images
+      .map(imgPath => {
+        const fullPath = path.join(__dirname, imgPath);
+        if (fs.existsSync(fullPath)) {
+          return {
+            type: 'photo',
+            media: { source: fullPath }
+          };
+        }
+        return null;
+      })
+      .filter(Boolean);
+
+    if (media.length > 0) {
+      await ctx.replyWithMediaGroup(media);
+    }
+  }
+
+  // 2️⃣ Потом текст (отдельным сообщением — так ПРАВИЛЬНО)
+  await ctx.replyWithMarkdown(
+    `*${main.title}*\n\n${main.text}`
+  );
+
+  // 3️⃣ Кнопка дальше
   await ctx.reply(
-    '👇 Weiter:',
+    '👇 Wähle weiter:',
     Markup.inlineKeyboard([
       [Markup.button.callback('👉 Weiter zu Tag 13', 'open_13')]
     ])
@@ -530,6 +547,7 @@ if (dayNumber === 12) {
 
   return;
 }
+
 
 
 

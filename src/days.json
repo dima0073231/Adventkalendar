@@ -359,13 +359,10 @@
 },
 "11": {
   "day_number": 11,
-  "title": "Winter & Weihnachts-Bucket-List",
   "sections": {
     "main": {
-      "text": "Heute wird es gemütlich und ein bisschen kreativ! ✨\nDu bekommst eine Winter- & Weihnachts-Bucket-List – viele kleine Ideen, die dir helfen, den Winter zu genießen und dabei Deutsch zu lernen. 🇩🇪❄️\n\nMach es dir mit einer Tasse Tee bequem ☕, lies die Liste und such dir aus, was du ausprobieren möchtest.\nJede Aktivität ist eine schöne Möglichkeit, neue Wörter zu lernen und in die deutsche Kultur einzutauchen. 💫\n\nViel Spaß und eine schöne Adventszeit! 🎁\n\n💡 *Tipp für Lernende:*\nDu kannst jeden Punkt abhaken und einen Satz im Perfekt schreiben, was du schon gemacht hast.\nZum Beispiel:\n\nIch war auf dem Weihnachtsmarkt.\nIch habe ein deutsches Lied gelernt."
-    },
-    "bucket": {
-      "file_path": "fotos/foto.png"
+      "image_path": "images/day11.jpg",
+      "text": "Heute wird es gemütlich und ein bisschen kreativ! ✨\n\nDu bekommst eine Winter- & Weihnachts-Bucket-List – viele kleine Ideen, die dir helfen, den Winter zu genießen und dabei Deutsch zu lernen. 🇩🇪❄️\n\nMach es dir mit einer Tasse Tee bequem ☕, lies die Liste und such dir aus, was du ausprobieren möchtest.\nJede Aktivität ist eine schöne Möglichkeit, neue Wörter zu lernen und in die deutsche Kultur einzutauchen. 💫\n\nViel Spaß und eine schöne Adventszeit! 🎁\n\n💡 Tipp für Lernende:\nDu kannst jeden Punkt abhaken und einen Satz im Perfekt schreiben.\n\nZum Beispiel:\nIch war auf dem Weihnachtsmarkt.\nIch habe ein deutsches Lied gelernt."
     }
   }
 },
@@ -373,16 +370,20 @@
   "day_number": 12,
   "sections": {
     "main": {
+      "title": "🎄 Weihnachts- & Winterfilme",
+      "text": "Heute machen wir es uns richtig gemütlich! ☕🕯️\n\nWas gibt es Schöneres in der Adventszeit, als Weihnachts- und Winterfilme zu schauen – und dabei Deutsch zu lernen? 🇩🇪✨\n\nIch habe für dich eine Liste mit tollen Filmen auf Netflix zusammengestellt, die du mit deutscher Sprache oder Untertiteln anschauen kannst.\n\nMach es dir bequem, kuschle dich ein und genieße die Weihnachtsstimmung – während du dein Deutsch verbesserst! 🎄🎬",
       "images": [
-        "images/p1.jpeg",
-        "images/p2.jpeg",
-        "images/p3.jpeg",
-         "images/p4.jpeg"
-      ],
-      "text": "Heute machen wir es uns richtig gemütlich! ☕🕯️\n\nWas gibt es Schöneres in der Adventszeit, als Weihnachts- und Winterfilme zu schauen – und dabei Deutsch zu lernen? 🇩🇪✨\n\nIch habe für dich eine Liste mit tollen Filmen auf Netflix zusammengestellt, die du mit deutscher Sprache oder Untertiteln anschauen kannst.\nDie Geschichten sind verständlich, unterhaltsam und perfekt, um neue Wörter und Redewendungen zu lernen. 🌟\n\nMach es dir bequem, kuschle dich ein und genieße die Weihnachtsstimmung – während du dein Deutsch verbesserst! 🎄🎬"
+        "images/day12_1.jpg",
+        "images/day12_2.jpg",
+        "images/day12_3.jpg",
+        "images/day12_4.jpg",
+        "images/day12_5.jpg",
+        "images/day12_6.jpg"
+      ]
     }
   }
 }
+
 
 
 
