@@ -859,40 +859,66 @@ bot.action('day_9_song1', async (ctx) => {
   const sec = daysJson["9"].sections.song1;
   await ctx.answerCbQuery().catch(() => {});
 
-  try {
-    await ctx.replyWithAudio({ source: sec.audio_file });
-    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
-  } catch (err) {
-    console.error(err);
-    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
+  const audioPath = path.join(__dirname, sec.audio_file);
+
+  if (fs.existsSync(audioPath)) {
+    await ctx.replyWithAudio(
+      { source: audioPath },
+      {
+        caption: `*${sec.title}*\n\n${sec.text}`,
+        parse_mode: 'Markdown'
+      }
+    );
+  } else {
+    await ctx.replyWithMarkdown(
+      `*${sec.title}*\n\n${sec.text}\n\n❌ Аудиофайл не найден`
+    );
   }
 });
+
 
 
 bot.action('day_9_song2', async (ctx) => {
   const sec = daysJson["9"].sections.song2;
   await ctx.answerCbQuery().catch(() => {});
 
-  try {
-    await ctx.replyWithAudio({ source: sec.audio_file });
-    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
-  } catch (err) {
-    console.error(err);
-    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
+  const audioPath = path.join(__dirname, sec.audio_file);
+
+  if (fs.existsSync(audioPath)) {
+    await ctx.replyWithAudio(
+      { source: audioPath },
+      {
+        caption: `*${sec.title}*\n\n${sec.text}`,
+        parse_mode: 'Markdown'
+      }
+    );
+  } else {
+    await ctx.replyWithMarkdown(
+      `*${sec.title}*\n\n${sec.text}\n\n❌ Аудиофайл не найден`
+    );
   }
 });
+
 
 
 bot.action('day_9_song3', async (ctx) => {
   const sec = daysJson["9"].sections.song3;
   await ctx.answerCbQuery().catch(() => {});
 
-  try {
-    await ctx.replyWithAudio({ source: sec.audio_file });
-    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
-  } catch (err) {
-    console.error(err);
-    await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
+  const audioPath = path.join(__dirname, sec.audio_file);
+
+  if (fs.existsSync(audioPath)) {
+    await ctx.replyWithAudio(
+      { source: audioPath },
+      {
+        caption: `*${sec.title}*\n\n${sec.text}`,
+        parse_mode: 'Markdown'
+      }
+    );
+  } else {
+    await ctx.replyWithMarkdown(
+      `*${sec.title}*\n\n${sec.text}\n\n❌ Аудиофайл не найден`
+    );
   }
 });
 
