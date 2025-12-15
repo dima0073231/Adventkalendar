@@ -485,11 +485,6 @@ if (dayNumber === 6) {
   // ---------- SPECIAL DAY 11 ----------
  if (dayNumber === 11) {
   const main = day.sections.main;
-   if (main) {
-      await ctx.replyWithMarkdown(
-        `*🎄 TAG 11*\n\n*${main.title}*\n\n${main.text}`
-      );
-    }
 
   await ctx.reply(main.text);
 
@@ -501,6 +496,7 @@ if (dayNumber === 6) {
     ])
   );
 }
+
 
 
   // ---------- DEFAULT FOR OTHER DAYS ----------
@@ -936,6 +932,19 @@ bot.action('day_10_reading', async (ctx) => {
   await ctx.answerCbQuery().catch(() => {});
   await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
 });
+bot.action('day_11_bucket', async (ctx) => {
+  const sec = daysJson["11"].sections.bucket;
+  await ctx.answerCbQuery().catch(() => {});
+
+  const filePath = path.join(__dirname, sec.file_path);
+
+  if (fs.existsSync(filePath)) {
+    await ctx.replyWithDocument({ source: filePath });
+  } else {
+    await ctx.reply('⚠️ Datei nicht gefunden.');
+  }
+});
+
 
 
 // ==================== DAY 11 HANDLERS ====================
