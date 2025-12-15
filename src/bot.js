@@ -927,14 +927,16 @@ bot.action('day_9_song3', async (ctx) => {
 bot.action('day_10_vocab', async (ctx) => {
   const sec = daysJson["10"].sections.vocab;
   await ctx.answerCbQuery().catch(() => {});
-  await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
+  await ctx.reply(`${sec.title}\n\n${sec.text}`);
 });
+
 
 bot.action('day_10_reading', async (ctx) => {
   const sec = daysJson["10"].sections.reading;
   await ctx.answerCbQuery().catch(() => {});
   await ctx.replyWithMarkdown(`*${sec.title}*\n\n${sec.text}`);
 });
+
 
 // ==================== DAY 11 HANDLERS ====================
 bot.action('day_11_vocab', async (ctx) => {
