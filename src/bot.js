@@ -487,11 +487,11 @@ if (dayNumber === 6) {
   const main = day.sections.main;
   
 
- if (main) {
-      await ctx.replyWithMarkdown(
-        `*🎄 TAG 11*\n\n*${main.title}*\n\n${main.text}`
-      );
-    }
+  if (main) {
+    await ctx.replyWithMarkdown(
+      `*🎄 TAG 11*\n\n${main.text}`
+    );
+  }
 
   return ctx.reply(
     '👇 Wähle weiter:',
@@ -505,10 +505,10 @@ if (dayNumber === 6) {
 if (dayNumber === 12) {
   const main = day.sections.main;
   if (main) {
-      await ctx.replyWithMarkdown(
-        `*🎄 TAG 12*\n\n*${main.title}*\n\n${main.text}`
-      );
-    }
+    await ctx.replyWithMarkdown(
+      `*🎄 TAG 12*\n\n${main.text}`
+    );
+  }
 
   // 📸 отправляем все картинки подряд
   if (main.images && Array.isArray(main.images)) {
