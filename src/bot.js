@@ -939,20 +939,20 @@ bot.action('day_9_song3', async (ctx) => {
 
   const audioPath = path.join(__dirname, sec.audio_file);
 
+  // 1️⃣ Отправляем аудио (БЕЗ длинного caption)
   if (fs.existsSync(audioPath)) {
     await ctx.replyWithAudio(
       { source: audioPath },
-      {
-        caption: `*${sec.title}*\n\n${sec.text}`,
-        parse_mode: 'Markdown'
-      }
+      { caption: sec.title } // только короткий заголовок
     );
   } else {
-    await ctx.replyWithMarkdown(
-      `*${sec.title}*\n\n${sec.text}\n\n❌ Аудиофайл не найден`
-    );
+    await ctx.reply(`🎧 Аудио не найдено: ${sec.audio_file}`);
   }
+
+  // 2️⃣ Отправляем текст песни отдельным сообщением
+  await ctx.reply(sec.text);
 });
+
 
 
 // ==================== DAY 10 HANDLERS ====================
